@@ -6,6 +6,7 @@ import me.jarbasgouveia.organizadordetimes.services.JogadorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -21,5 +22,10 @@ public class JogadorServiceImpl implements JogadorService {
         }
         Jogador jogador = new Jogador(nome);
         jogadorRepository.save(jogador);
+    }
+
+    @Override
+    public List<Jogador> listarJogadores() {
+        return jogadorRepository.findAll();
     }
 }
