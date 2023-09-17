@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 public class JarbasGouveiaJr {
 
+
+
     public static Map<String, List<String>> organizarTimes(List<String> jogadores) {
         Map<String, List<String>> times = new HashMap<>();
+        int i = 1;
+
 
         for (String jogador : jogadores) {
             String[] partesNome = jogador.split(" ");
@@ -17,7 +20,7 @@ public class JarbasGouveiaJr {
                 continue;
             }
             String sobrenome = partesNome[1];
-            String nomeTime = sobrenomeExiste(times, sobrenome) ? UUID.randomUUID().toString() : sobrenome.substring(0, 1);
+            String nomeTime = sobrenomeExiste(times, sobrenome) ? "Time " + i++ : "Time " + sobrenome.charAt(0);
             times.computeIfAbsent(nomeTime, key -> new ArrayList<>()).add(jogador);
         }
 
@@ -25,6 +28,7 @@ public class JarbasGouveiaJr {
     }
 
     private static boolean sobrenomeExiste(Map<String, List<String>> times, String sobrenome) {
+
         for (List<String> jogadoresTime : times.values()) {
             for (String jogador : jogadoresTime) {
                 String sobrenomeJogador = jogador.split(" ")[1];
