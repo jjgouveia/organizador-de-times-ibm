@@ -15,17 +15,25 @@ public class JogadorServiceImpl implements JogadorService {
     @Autowired
     private JogadorRepository jogadorRepository;
 
+
     @Override
-    public void criarJogador(String nome) {
-        if (nome == null || nome.isEmpty()) {
+    public void criarJogador(Jogador jogador) {
+        if (jogador.getNome() == null || jogador.getNome().isEmpty()) {
             throw new IllegalArgumentException("Nome não pode ser vazio");
         }
-        Jogador jogador = new Jogador(nome);
         jogadorRepository.save(jogador);
     }
 
     @Override
     public List<Jogador> listarJogadores() {
         return jogadorRepository.findAll();
+    }
+
+    @Override
+    public void deletarJogadores() {
+        if(jogadorRepository.findAll().isEmpty()){
+            throw new NoSuchElementException("Não há jogadores para deletar");
+        }
+        jogadorRepository.deleteAll();
     }
 }

@@ -5,8 +5,10 @@ import me.jarbasgouveia.organizadordetimes.domain.entities.Jogador;
 import java.util.List;
 
 public interface JogadorService {
-    void criarJogador(String nome);
+    void criarJogador(Jogador jogador);
     List<Jogador> listarJogadores();
+
+    void deletarJogadores();
 
 
 }
