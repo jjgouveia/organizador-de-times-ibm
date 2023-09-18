@@ -20,7 +20,7 @@ public class JogadorController {
     public ResponseEntity<Void> criarJogador(@RequestBody Jogador nome) {
         try {
             jogadorService.criarJogador(nome);
-            return ResponseEntity.status(HttpStatus.OK).build();
+            return ResponseEntity.status(HttpStatus.CREATED).build();
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
             return ResponseEntity.badRequest().build();
@@ -31,7 +31,7 @@ public class JogadorController {
     public ResponseEntity<Void> deletarJogadores(){
         try {
             jogadorService.deletarJogadores();
-            return ResponseEntity.status(HttpStatus.OK).build();
+            return ResponseEntity.status(HttpStatus.ACCEPTED).build();
         } catch (NoSuchElementException e) {
             System.out.println(e.getMessage());
             return ResponseEntity.badRequest().build();
