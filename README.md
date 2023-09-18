@@ -1,5 +1,5 @@
 # API Organizador de Times
-### Resolução do Bootcamp de Desemvolvedor Jr da [IBM](https://www.ibm.com/br-pt)
+### Resolução do Bootcamp de Desenvolvedor Jr da [IBM](https://www.ibm.com/br-pt)
 ## Descrição
 API para gerenciamento de times de futebol e seus jogadores de acordo com as seguintes regras:
 
