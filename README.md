@@ -8,7 +8,10 @@ Cada time deve ser formado com jogadores cujo sobrenome comece com a mesma letra
 Mas aqui está a reviravolta: você só pode ter UM jogador com o mesmo sobrenome começando com a mesma letra em um time. Se houver mais de um jogador com o mesmo sobrenome começando com a mesma letra, eles não podem estar no mesmo time.
 
 ## Deploy
-A API está hospedada no Render e pode ser acessada [aqui](#).
+A API está hospedada no Render e pode ser acessada [aqui](https://organizadordetimes.onrender.com/).
+
+## Documentação da API (Swagger)
+A documentação da API pode ser acessada [aqui](https://organizadordetimes.onrender.com/swagger-ui.html).
 
 ## Tecnologias
 - Java 17
