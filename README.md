@@ -25,6 +25,7 @@ A API está hospedada no Render e pode ser acessada [aqui](#).
 
 ### Executando
 - Clone o repositório
+- Execute os testes com o comando `mvn test` na pasta raiz do projeto
 - Execute o comando `mvn spring-boot:run` na pasta raiz do projeto
 - Acesse a documentação da API em `http://localhost:8080/swagger-ui.html`
 - Acesse o banco de dados em `http://localhost:8080/h2-console`
@@ -35,14 +36,14 @@ A API está hospedada no Render e pode ser acessada [aqui](#).
 #### GET /times
 Retorna todos os times cadastrados e seus jogadores.
 ### Jogadores
-#### POST /jogadores
+#### POST /jogador
 Cadastra um novo jogador.
-#### DELETE /jogadores/all
+#### DELETE /jogador/all
 Deleta todos os jogadores cadastrados.
 
 ## Exemplos
 ### Cadastrar um novo jogador
-#### POST /jogadores
+#### POST /jogador
 ```json
 {
   "nome": "Diego Souza"
@@ -50,6 +51,12 @@ Deleta todos os jogadores cadastrados.
 ```
 #### Response
 A resposta não possui corpo e retorna o status 201 (Created).
+
+### Deletar todos os jogadores
+#### DELETE /jogador/all
+#### Response
+A resposta não possui corpo e retorna o status 202 (Accepted).
+
 ### Listar todos os times
 #### GET /times
 #### Response
@@ -63,10 +70,7 @@ Retorna o body e o status 200 (OK).
   }
 ]
 ```
-### Deletar todos os jogadores
-#### DELETE /jogadores/all
-#### Response
-A resposta não possui corpo e retorna o status 202 (Accepted).
+
 
 ## Autor
 [Jarbas Gouveia](https://github.com/jjgouveia)
