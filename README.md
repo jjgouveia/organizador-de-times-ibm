@@ -9,6 +9,8 @@ Mas aqui está a reviravolta: você só pode ter UM jogador com o mesmo sobrenom
 
 ## Deploy
 A API está hospedada no Render e pode ser acessada [aqui](https://organizadordetimes-edee049df2b8.herokuapp.com/).
+O Front-end está hospedado na Vercel e pode ser acessado [aqui](https://organizadordetimes.vercel.app/)
+Link para o repositorio do front-end [aqui](https://github.com/jjgouveia/organizador-de-times)
 
 ## Documentação da API (Swagger)
 A documentação da API pode ser acessada [aqui](https://organizadordetimes-edee049df2b8.herokuapp.com/swagger-ui.html).
@@ -28,7 +30,7 @@ A documentação da API pode ser acessada [aqui](https://organizadordetimes-edee
 
 ### Executando
 - Clone o repositório
-- Execute os testes com o comando `mvn test` na pasta raiz do projeto
+- Aplicação conta com implementação de testes automatizados. Execute-os com o comando `mvn test` na pasta raiz do projeto
 - Execute o comando `mvn spring-boot:run` na pasta raiz do projeto
 - Acesse a documentação da API em `http://localhost:8080/swagger-ui.html`
 - Acesse o banco de dados em `http://localhost:8080/h2-console`
