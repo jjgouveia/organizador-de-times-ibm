@@ -9,7 +9,9 @@ Mas aqui está a reviravolta: você só pode ter UM jogador com o mesmo sobrenom
 
 ## Deploy
 A API está hospedada no Render e pode ser acessada [aqui](https://organizadordetimes-edee049df2b8.herokuapp.com/).
+
 O Front-end está hospedado na Vercel e pode ser acessado [aqui](https://organizadordetimes.vercel.app/)
+
 Link para o repositorio do front-end [aqui](https://github.com/jjgouveia/organizador-de-times)
 
 ## Documentação da API (Swagger)
