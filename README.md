@@ -8,7 +8,7 @@ Cada time deve ser formado com jogadores cujo sobrenome comece com a mesma letra
 Mas aqui está a reviravolta: você só pode ter UM jogador com o mesmo sobrenome começando com a mesma letra em um time. Se houver mais de um jogador com o mesmo sobrenome começando com a mesma letra, eles não podem estar no mesmo time.
 
 ## Deploy
-A API está hospedada no Render e pode ser acessada [aqui](https://organizadordetimes-edee049df2b8.herokuapp.com/).
+A API está hospedada na Heroku e pode ser acessada [aqui](https://organizadordetimes-edee049df2b8.herokuapp.com/).
 
 O Front-end está hospedado na Vercel e pode ser acessado [aqui](https://organizadordetimes.vercel.app/)
 
