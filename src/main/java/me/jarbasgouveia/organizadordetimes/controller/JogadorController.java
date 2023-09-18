@@ -22,7 +22,6 @@ public class JogadorController {
             jogadorService.criarJogador(nome);
             return ResponseEntity.status(HttpStatus.CREATED).build();
         } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
             return ResponseEntity.badRequest().build();
         }
     }
@@ -33,7 +32,6 @@ public class JogadorController {
             jogadorService.deletarJogadores();
             return ResponseEntity.status(HttpStatus.ACCEPTED).build();
         } catch (NoSuchElementException e) {
-            System.out.println(e.getMessage());
             return ResponseEntity.badRequest().build();
         }
 
